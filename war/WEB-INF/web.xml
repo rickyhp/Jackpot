@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <!--  <filter>
+        <filter-name>cross-origin</filter-name>
+        <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
+        <init-param>
+        <param-name>allowedOrigins</param-name>
+        <param-value>*</param-value>
+    </init-param>
+    </filter>-->
+    <servlet>
+    	<servlet-name>SlotServer</servlet-name>
+    	<servlet-class>com.mygames.jackpot.SlotServer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>SlotServer</servlet-name>
+    	<url-pattern>/slotserver</url-pattern>
+    </servlet-mapping>
+  <!--  <filter-mapping>
+    <filter-name>cross-origin</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>-->
+</web-app>
